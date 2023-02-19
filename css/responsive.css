@@ -27,7 +27,7 @@
         margin-bottom: 0;
     }
     .discount-img img {
-        height: 200px;
+        height: 175px;
     }
 }
 @media screen and (max-width: 1199px) {
@@ -49,6 +49,12 @@
     .main-slider .slider-text h3 {
         font-size: 27px;
       
+        
+    }
+    .discount-text h3 a {
+        font-size: 15px;
+        font-weight: 600;
+        color: #5e1b3b;
     }
 }
 @media screen and (max-width: 999px) {
@@ -136,8 +142,8 @@
     }
     .owl-dots {
         position: absolute;
-        right: 50%;
-        transform: translateY(-50%);
+        right: 47%;
+        transform: translateY(-47%);
         bottom: 8px;
     }
     .pc-banar{
@@ -157,12 +163,16 @@
         text-align: center;
         margin-left: 4%;
     }
+
     .discount-product {
-        margin-bottom: 50px;
+        margin-bottom: 10px;
+    }
+    .discount-img img {
+        height: 156px;
     }
     .sub-form {
-        padding: 0px 0px;
-        padding-left: 30px;
+        padding: 0px 30px;
+       
     }
     .main-slider{
         display: block;
@@ -176,12 +186,19 @@
         width: 100%;
         text-align: center;
     }
-    
+    .sub-form form input {
+        width: 100%;
+    }
     .footer-widget {
         margin-bottom: 25px;
     }
     .footer-text p:last-child {
         margin-left: 0px;
+    }
+    .nav-tabs .nav-link {
+      
+        font-size: 17px;
+        font-weight: 500;
     }
     .main-slider .slider-text h3 {
         font-size: 20px;
@@ -202,7 +219,8 @@
     }
     .nav-tabs .nav-link {
         color: #242424;
-        font-size: 14px;
+        font-size: 12px;
+        font-weight: 600;
     }
     .header-bottom .left-side ul{
         padding-left: 0;

@@ -14,6 +14,7 @@
   --header-bg: #ffffff;
   --pro-bg: #ffffff;
   --pro-title:#5e1b3b;
+  --pro-icon:#5e1b3b;
   --icon-color:#242424;
 }
 
@@ -25,6 +26,7 @@
   --header-bg: #171717;
   --pro-bg: #383838;
   --pro-title:#f3d379;
+  --pro-icon:#ffffff;
   --icon-color:#ffffff;
 }
 
@@ -102,6 +104,9 @@ li {
   padding-top: 30px;
   padding-bottom: 20px;
   background: var(--header-bg);
+}
+.header-bottom .left-side ul {
+  padding-left: 0;
 }
 .header-bottom .left-side ul li.logo {
   width: 196px;
@@ -302,6 +307,11 @@ input:checked + .slider:before {
 
 .slider-img {
   margin-bottom: 20px;
+  height: 80px;
+}
+
+.product-title h3 {
+  line-height: 13px;
 }
 
 .product-title h3 a {
@@ -385,6 +395,8 @@ button.owl-dot {
 
 .product {
   width: 19%;
+  height: 260px;
+  transform: scaleY(1);
   display: inline-block;
   padding: 0px 3px;
   background: var(--pro-bg);
@@ -409,11 +421,13 @@ button.owl-dot {
   transition: 0.5s;
 }
 .pro-text .bttn i {
-  color: #5e1b3b;
+  color: var(--pro-icon);
   cursor: pointer;
 }
-.pro-text .bttn.active {
-  transform: translateY(0px);
+
+.product:hover {
+  transform: scaleY(1);
+  height: 350px;
 }
 
 .product:hover .bttn {
@@ -472,14 +486,13 @@ button.owl-dot {
 
 .discount-img {
   position: relative;
-  width: 35%;
-  padding-left: 20px;
+  width: 40%;
 }
 .discount-img img {
-  width: 91%;
+  width: 98%;
   position: absolute;
-  height: 220px;
-  top: -13px;
+  height: 190px;
+  top: 0px;
 }
 .discount-img span {
   background-color: #5e1b3b;
@@ -489,12 +502,12 @@ button.owl-dot {
   border-radius: 5px;
   padding: 10px 5px;
   position: absolute;
-  top: -13px;
+  top: 0px;
   right: 0;
 }
 
 .discount-text {
-  width: 65%;
+  width: 60%;
   color: #5e1b3b;
   padding-left: 20px;
   padding-top: 10px;
@@ -704,4 +717,40 @@ footer a {
 }
 .footer-text p:last-child {
   margin-left: 70px;
+}
+
+.add-cart {
+  display: none;
+  position: fixed;
+  top: 105px;
+  left: 267px;
+  z-index: 99999;
+}
+
+.add-cart i#addcross {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 36px;
+}
+
+.ui-w-40 {
+  width: 40px !important;
+  height: auto;
+}
+
+.card {
+  box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.08);
+}
+
+.ui-product-color {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0.144em;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 10rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
+  vertical-align: middle;
 }/*# sourceMappingURL=style.css.map */
